@@ -38,6 +38,7 @@ public class FlappyBoatGame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(1, 1));
         setVisible(true);
+        setResizable(false);
 
         ps = new PlayScreen(this);
         add(ps);
