@@ -94,7 +94,7 @@ public class PlayScreen extends JLayeredPane{
 
             @Override
             public void keyPressed(KeyEvent e) {
-                if(boat.isAlive() && boat.getLocY() > 0) {
+                if(e.getKeyCode() == KeyEvent.VK_SPACE && boat.isAlive() && boat.getLocY() > 0) {
                     if(isTutorial) {
                         isTutorial = false;
                         lbTutorial.setVisible(false);
